@@ -1,0 +1,20 @@
+{
+  "name": "hax-newz",
+  "version": "1.0.0",
+  "description": "Project 1 of Udacity's Front-end Developer Course. Create a personal blog website using html, css, flex-box and grid-css.",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch css/main.scss -o css/main.css"
+  },
+  "keywords": [
+    "blog",
+    "minimalism",
+    "mockup",
+    "udacity"
+  ],
+  "author": "Marco Barrantes",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

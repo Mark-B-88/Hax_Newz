@@ -1,0 +1,238 @@
+/* Page Container */
+
+.container {
+    // border: 1px solid red;
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Navbar */
+
+.nav-container {
+    display: grid;
+    grid-template-columns: repeat(minmax(auto, 720px));
+    grid-template-rows: 100px;
+    grid-template-areas: 
+    "nav input"
+    ;
+    /* Underline Box Shdaow */
+    box-shadow: 0 3px 3px -3px rgba(0,0,0,0.3);
+}
+
+.navbar {
+    grid-area: nav;
+    & ul {
+        & li {
+            & a{
+                transition: all 0.2s ease-in-out;
+                &:hover {
+                    padding-right: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.subscribe_input {
+    width: auto;
+    height: auto;
+    input:focus {
+        outline: none;
+    }
+    grid-area: input;
+    & form {
+        & button {
+            border: 2px solid var(--primary);
+            background-color: var(--primary);
+            color: var(--light);
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+            &:hover {
+                background-color: var(--primary-offset);
+            }
+        }
+    }
+}
+
+/* Main Post */
+
+.main_post_container {
+    display: grid;
+    grid-template-columns: 300px 1140px;
+    grid-template-rows: 400px;
+    grid-template-areas: 
+    "lp mp"
+    ;
+    margin-top: 4rem;
+    height: auto;
+}
+
+.latest_posts {
+    grid-area: lp;
+    border-left: 1px solid rgba(0,0,0,0.3);
+    & a {
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            padding-left: 1rem;
+        }
+    }
+}
+
+.main_post {
+    grid-area: mp;
+    /* Full Box-Shadow */
+    box-shadow: 0px 0px 9px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    & h1 {
+        font-size: 63px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            color: var(--primary);
+            cursor: pointer;
+        }
+    }
+    & p {
+        font-size: 32px;
+    }
+}
+
+/* Posts */
+
+.post_container {
+    display: grid;
+    grid-template-columns: 1140px 300px;
+    grid-template-rows: 1100px;
+    grid-template-areas: 
+    "posts links"
+    ;
+    margin-top: 4rem;
+    height: auto;
+}
+
+.posts {
+    grid-area: posts;
+    & h2:hover {
+        color: var(--primary);
+        cursor: pointer;
+    }
+}
+
+.post_title {
+    margin: 2rem 0 0.4rem 0;
+}
+
+.post_description {
+    font-weight: 400;
+}
+
+.post_date {
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.view_all_posts {
+    width: auto;
+    height: auto;
+}
+
+.post_btn {
+    /* Full Box-Shadow */
+    box-shadow: 0px 0px 9px rgba(0,0,0,0.2);
+    background-color: var(--light);
+    border: 0;
+    cursor: pointer;
+    width: 900px;
+    height: 60px;
+    transition: all 0.2s ease-in-out;
+    & svg {
+        width: 1rem;
+        height: 1rem;
+    }
+    &:hover {
+        background-color: var(--primary);
+        color: var(--light);
+    }
+}
+
+.home_btn {
+    /* Full Box-Shadow */
+    box-shadow: 0px 0px 9px rgba(0,0,0,0.2);
+    background-color: var(--light);
+    border: 0;
+    cursor: pointer;
+    width: 400px;
+    height: 60px;
+    margin: 2rem 0;
+    transition: all 0.2s ease-in-out;
+    & a:hover {
+        color: var(--light);
+    }
+    & svg {
+        width: 1rem;
+        height: 1rem;
+    }
+    &:hover {
+        background-color: var(--primary);
+        color: var(--light);
+    }
+}
+
+.posts_title,
+.links_title,
+.hot_links {
+    /* Underline Box Shadow */
+    box-shadow: 0 3px 3px -3px rgba(0,0,0,0.3);
+}
+
+.latest_links {
+    grid-area: links;
+}
+
+.l_links {
+    & li {
+        & a {
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                padding-left: 1rem;
+            }
+        }
+    }
+}
+
+.h_link_title {
+    font-weight: 600;
+}
+
+.h_link_excerpt {
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+/* Newletter */
+
+.newsletter {
+    background-color: var(--secondary);
+    width: 100%;
+    height: 600px;
+}
+
+/* Article */
+
+.article {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+@import '../media';
