@@ -9,13 +9,3 @@ The assignment is to create a personal blog website with the use of CSS-Grid & F
 If you are using VS-Code, you can use the Live-Server extension to launch the website on localhost.
 
 ![Live-Server](images/five_server.jpg)
-
-# Applying Sass
-
-In order to apply the styling, make sure to use the following command to have node-sass watch for changes.
-
-```bash
-npm run scss
-```
-
-[node-sass offical documention](https://www.npmjs.com/package/node-sass)
