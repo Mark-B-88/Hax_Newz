@@ -48,9 +48,33 @@ html {
     text-transform: capitalize;
 }
 
-h1 { font-size: 32px; }
-h2 { font-size: 24px; }
-h3 { font-size: 18px; }
+h1 { 
+    font-size: 32px;
+    font-weight: bold;
+    background-color: var(--primary-offset);
+    box-shadow: 0px 0px 9px rgba(0,0,0,0.2);
+    color: var(--light);
+    border-radius: 36px;
+    padding: 1rem;
+}
+h2 { 
+    font-size: 24px;
+    font-weight: 400;
+    background-color: var(--secondary);
+    box-shadow: 0px 0px 9px rgba(0,0,0,0.2);
+    color: var(--light);
+    border-radius: 36px;
+    padding: 1rem;
+}
+h3 { 
+    font-size: 24px;
+    font-weight: 200;
+    background-color: var(--primary);
+    box-shadow: 0px 0px 9px rgba(0,0,0,0.2);
+    color: var(--light);
+    border-radius: 36px;
+    padding: 1rem;
+}
 h4 { font-size: 16px; }
 h5 { font-size: 14px; }
 h6 { font-size: 10px; }
